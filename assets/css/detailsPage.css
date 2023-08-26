@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f8fc;
+}
+
+.conteudo{
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .conteudo {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+
+/* ---------------------------------------------Detalhes----------------------------------------------- */
+
+.pokemonDetalhado{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemonDetalhado .fotoPokemon{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.pokemonDetalhado .statusBar{
+    background-color: #6c79db;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    list-style: none;
+    font-size: large;
+}
+
+.pokemonDetalhado .statusBar .nome{
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pokemonDetalhado .statusBar .altura{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.pokemonDetalhado .statusBar .peso{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.pokemonDetalhado .statusBar .baseXp{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemonDetalhado {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemonDetalhado {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemonDetalhado {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
